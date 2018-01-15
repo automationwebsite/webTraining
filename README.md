@@ -1,62 +1,94 @@
-# [Start Bootstrap - Bare](https://startbootstrap.com/template-overviews/bare/)
+<a href="https://www.patreon.com/vladimirkharlampidi"><img src="https://cdn.framework7.io/i/support-badge.png" height="20"></a>
+[![Join the chat at https://gitter.im/nolimits4web/Framework7](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nolimits4web/Framework7)
+[![Build Status](https://travis-ci.org/framework7io/framework7.svg?branch=master)](https://travis-ci.org/framework7io/framework7)
+[![devDependency Status](https://david-dm.org/framework7io/framework7/dev-status.svg)](https://david-dm.org/framework7io/framework7#info=devDependencies)
 
-[Bare](http://startbootstrap.com/template-overviews/bare/) is a bare HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features predefined file paths for Bootstrap and jQuery, so you can quickly create Bootstrap websites.
+Framework7
+==========
 
-## Preview
+[![Greenkeeper badge](https://badges.greenkeeper.io/framework7io/Framework7.svg)](https://greenkeeper.io/)
 
-[![Bare Preview](https://startbootstrap.com/assets/img/templates/bare.jpg)](https://blackrockdigital.github.io/startbootstrap-bare/)
+Full Featured Mobile HTML Framework For Building iOS & Android Apps
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-bare/)**
+## Getting Started
+  * [Getting Started Guide](http://www.idangero.us/framework7/get-started/)
+  * Clone/download this repo
+  * Start building your App from changing Kitchen Sink, or using a clean template.
 
-## Status
+## Build
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-bare/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-bare.svg)](https://www.npmjs.com/package/startbootstrap-bare)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-bare.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-bare)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-bare/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-bare)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-bare/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-bare?type=dev)
+Framework7 uses `gulp` and `rollup` to build a development (build) and productuin (dist) versions.
 
-## Download and Installation
+First you need to have `gulp-cli` which you should install globally.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/bare/)
-* Install via npm: `npm i startbootstrap-bare`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-bare.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-bare)
+```
+$ npm install --global gulp
+```
 
-## Usage
+Then install all dependencies, in repo's root:
 
-### Basic Usage
+```
+$ npm install
+```
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+And build development version of Framework7:
+```
+$ npm run build:dev
+```
 
-### Advanced Usage
+The result is available in `build/` folder.
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## Dist/Release
 
-## Bugs and Issues
+To build production version of Framework7:
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-bare/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/bare/).
+```
+$ npm run build:prod
+```
 
-## Custom Builds
+Production version will be available in `dist/` folder.
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+## Kitchen Sink
 
-## About
+Kitchen Sink uses Ajax for navigation between pages so you will need a server.
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Run Kitchen Sink with development environment (development version will be built first):
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+```
+$ npm run dev
+```
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+Run Kitchen Sink with production environment (configured to scripts and styles from `dist/` folder):
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+```
+$ npm run prod
+```
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## Contributing
 
-## Copyright and License
+All changes should be commited to `src/` files. Framework7 uses LESS for CSS compliations, and ES modules JS files.
 
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-bare/blob/gh-pages/LICENSE) license.
+The project uses [.editorconfig](http://editorconfig.org/) to define the coding style of each file. We recommend that you install the Editor Config extension for your preferred IDE.
+
+If you want to help in Framework7 development and make it event better visit this page: http://framework7.io/contribute/
+
+## Forum
+
+If you have questions about Framework7 or want to help others you are welcome to special forum at http://forum.framework7.io/
+
+## Docs
+
+Documentation available at http://framework7.io/docs/
+
+## Tutorials
+
+Tutorials available at http://framework7.io/tutorials/
+
+## Showcase
+
+Appstore apps made with Framework7: http://framework7.io/showcase/
+
+## v1
+
+Old v1 version of Framework7 is still available at [v1 branch](https://github.com/framework7io/Framework7/tree/v1)
+# test24
